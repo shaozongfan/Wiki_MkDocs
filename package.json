@@ -5,6 +5,9 @@
     "scripts": {
       "dev": "mkdocs serve",
       "build": "pip install -r requirements.txt && mkdocs build -d public"
+    },
+    "engines":{
+	"node":"18"
     }
   }
 

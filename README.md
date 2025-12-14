@@ -1,17 +1,23 @@
-# Blog
-KFACBT's Blog - Based on MkDocs.
+# Wiki_MkDocs
+ 
+![GitHub last commit](https://img.shields.io/github/last-commit/linyuxuanlin/Wiki_MkDocs)
+<!--![GitHub repo size](https://img.shields.io/github/repo-size/linyuxuanlin/Wiki_MkDocs)-->
 
-## 简介
-此为 KFACBT 的 Blog 存储库。
+这里是我的个人 Wiki 知识库，基于 MkDocs 与 MkDocs Material。  
+请随意浏览下载，或者 clone 创建你自己的知识库。
 
-[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+(故障备用地址：https://linyuxuanlin.github.io/Wiki_MkDocs/ 或 https://mkdocs.wiki-power.com/)
 
-本项目基于 [MkDocs-Material](https://github.com/squidfunk/mkdocs-material/) 构建。
+Sitemap: <https://wiki-power.com/sitemap.xml>  
+RSS of created post: <https://wiki-power.com/feed_rss_created.xml>  
+RSS of updated post: <https://wiki-power.com/feed_rss_updated.xml>
 
-## 预览
-主链接：<https://blog-gytxtx.pages.dev/>
+[![Star History Chart](https://api.star-history.com/svg?repos=linyuxuanlin/Wiki_MkDocs&type=Date)](https://star-history.com/#linyuxuanlin/Wiki_MkDocs&Date)
 
-仅跳转：<https://gytxtx.github.io/Blog/>
+> 一些参考语法:  
+> Check the version of MkDocs: `mkdocs --version`  
+> Upgrade MkDocs: `pip install -U mkdocs`
+>
+> Check the version of Material theme: `pip show mkdocs-material`  
+> Upgrade Material theme: `pip install --upgrade mkdocs-material`
 
-<!-- ## 其他 -->
-<!-- 模板来自于 <https://github.com/Jackiexiao/foam-mkdocs-template/>。 -->

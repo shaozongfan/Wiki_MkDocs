@@ -1,23 +1,38 @@
-# Wiki_MkDocs
- 
-![GitHub last commit](https://img.shields.io/github/last-commit/linyuxuanlin/Wiki_MkDocs)
-<!--![GitHub repo size](https://img.shields.io/github/repo-size/linyuxuanlin/Wiki_MkDocs)-->
+## Vercel-MkDocs
 
-这里是我的个人 Wiki 知识库，基于 MkDocs 与 MkDocs Material。  
-请随意浏览下载，或者 clone 创建你自己的知识库。
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffu-sen%2FVercel-MkDocs)
 
-(故障备用地址：https://linyuxuanlin.github.io/Wiki_MkDocs/ 或 https://mkdocs.wiki-power.com/)
+**MkDocs with ▲Vercel (minimal configuration)**
 
-Sitemap: <https://wiki-power.com/sitemap.xml>  
-RSS of created post: <https://wiki-power.com/feed_rss_created.xml>  
-RSS of updated post: <https://wiki-power.com/feed_rss_updated.xml>
+- [▲ Vercel](https://vercel.com/)
+- [MkDocs](https://www.mkdocs.org/)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=linyuxuanlin/Wiki_MkDocs&type=Date)](https://star-history.com/#linyuxuanlin/Wiki_MkDocs&Date)
+## How to use
 
-> 一些参考语法:  
-> Check the version of MkDocs: `mkdocs --version`  
-> Upgrade MkDocs: `pip install -U mkdocs`
->
-> Check the version of Material theme: `pip show mkdocs-material`  
-> Upgrade Material theme: `pip install --upgrade mkdocs-material`
+1. Edit `mkdocs.yml` and `docs/index.md`, add more files if needed.
+2. Add the pip package to `requirements.txt` . (Themes and plugins)
+3. Use the Vercel command: `vercel dev` `vercel` and `vercel --prod`  
+or commit to a Git project: `git push`
+
+You do not need to change the `Build & Development Settings` item.
+
+## Build error
+
+If you've recently encountered a build error that was working fine before:
+
+https://github.com/mkdocs/mkdocs/discussions/3964#discussioncomment-12910071
+
+Many of the build error are that you mistyped `mkdocs.yml`
+or you forgot to add the package to` requirements.txt`.
+Check the file change immediately before the error occurred.
+
+This is often not a problem with this project.
+You should not open an issue for that.
+
+## Fork of this project
+
+If you fork this project, be sure to change something and commit.
+If you re-deploy without changing anything, it's my commit and I'll be notified.
+
+You can also create a new project without forking or use the [Vercel CLI](https://vercel.com/docs/cli) without creating a project.
 

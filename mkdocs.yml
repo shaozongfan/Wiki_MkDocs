@@ -1,289 +1,190 @@
-﻿site_name: Power's Wiki
-site_description: 博览万物，融会贯通。
-site_url: https://wiki-power.com/
-repo_url: https://github.com/linyuxuanlin/Wiki_MkDocs
-#remote_name: linyuxuanlin/Wiki_MkDocs
-edit_uri: edit/main/docs/ # 编辑按钮的url
-INHERIT: mkdocs.nav.yml
+# Official tutorial 
+# MkDocs: https://www.mkdocs.org/user-guide/configuration/
+# MkDocs-Material: https://squidfunk.github.io/mkdocs-material/
 
+site_name: KFACBT 的博客
+site_description: Anyway, keep learning.
+site_author: gytxtx
+site_url: https://blog-gytxtx.pages.dev/
+# site_url: http://www.example.com/
+
+#  GitHub Repo link
+repo_url: https://github.com/gytxtx/Blog/
+repo_name: gytxtx/Blog
+
+# 自定义导航栏
+nav:
+  - 首页: index.md
+  - 博客:
+    - blog/index.md
+    - blog/tags.md
+  - 关于: blog/about.md
+  - 友链: blog/links.md
 
 theme:
   name: material
-  font: false # 国内网络访问 Google 源可能会有问题
-    #text: "Noto Sans SC - local"
-    #code: Roboto Mono
-  palette:
-    - media: "(prefers-color-scheme: light)" # 检查用户系统配置是否为亮色
-      scheme: default # 亮色模式
-      primary: white # 基本颜色
-      accent: blue # 按钮等互动块的颜色
-      toggle:
-        icon: material/eye
-        name: 切换暗色模式
-    - media: "(prefers-color-scheme: dark)" # 检查用户系统配置是否为暗色
-      scheme: slate # 暗色模式
-      primary: black # 基本颜色
-      accent: blue # 按钮等互动块的颜色
-      toggle:
-        icon: material/eye-outline
-        name: 切换亮色模式
-  language: zh
-  logo: img/logo-zip.png #https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png
-  favicon: img/logo.svg #https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo.svg #https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png
-  features:
-    - content.code.copy # 代码块复制按钮
-    - content.action.edit # 文章编辑按钮
-    #- navigation.instant # Instant loading，像个单页应用
-    - navigation.tracking # Anchor tracking
-    - navigation.tabs # 导航栏
-    - navigation.footer # 上一篇 / 下一篇导航按钮
-    #- navigation.tabs.sticky # 导航栏不随页面滚动隐藏
-    - navigation.sections # 侧边栏分组显示
-    #- navigation.expand # 导航栏自动展开
-    - navigation.indexes # 组标题有专属页面
-    - toc.follow # 目录自动跟随
-    - navigation.top # 返回顶部按钮
-    - search.suggest # 搜索推荐
-    #- navigation.prune # 导航修剪，仅渲染可见链接，优化文档数量超过100的站点（实验），会导致页面间跳转速度变慢
-    #- search.highlight
-  icon:
-    repo: material/github
-    #edit: material/pencil
 
-plugins:
-  - i18n:
-      docs_structure: folder
-      fallback_to_default: true
-      languages:
-        - locale: zh
-          default: true
-          name: 简体中文
-          build: true
-        - locale: en
-          name: English
-          build: true
-          site_description: To have an extensive knowledge of all things and integrate them into a coherent whole.
-          copyright: Copyright &copy; 2015 - 2023 by Power | <a href="https://beian.miit.gov.cn"> ICP License No. 20014898 in Guangdong </a>
-          nav_translations:
-            Home: Home
-            硬件 & 半导体: Hardware & Semiconductor
-            硬件设计: Hardware Design
-            基础知识: Basics
-            嵌入式硬件: Embedded Hardware
-            电机驱动: Motor Drive
-            通信协议: Communication Protocols
-            电源设计: Power Design
-            信号与电源完整性: Signal and Power Integrity
-            射频设计: RF Design
-            软件与仪器: Software and Tools
-            半导体测试: Semiconductor Testing
-            测试协议: Testing Protocols
-            ATE 基础知识: ATE Basics
-            ATE Test Fundamental: ATE Test Fundamentals
-            ATE Mixed Signal Test: ATE Mixed Signal Test
-            ATE Coding Syntax: ATE Coding Syntax
-            VBT Syntax: VBT Syntax
-            嵌入式 & 软件开发: Embedded & Software Development
-            嵌入式开发: Embedded Development
-            STM32: STM32
-            Arduino & 杂项: Arduino & Miscellaneous
-            软件开发: Software Development
-            DOCKER: Docker
-            LINUX: Linux
-            杂七杂八: Miscellaneous
-            机器学习: Machine Learning
-            其他: Others
-            生活 & 折腾: Life & Exploration
-            生活琐记: Life Musings
-            LIFEHACK: Life Hack
-            BLOG: Blog
-            折腾不止: Continuous Exploration
-            自托管 Self-Host: Self-Hosting
-            自托管应用收藏（Docker）: Self-Hosted App Collection (Docker)
-            群晖 NAS: Synology NAS
-            技术流: Tech Flow
-            一些小技巧: Some Tips and Tricks
-        - locale: es
-          name: Español
-          build: true
-          site_description: Abarcar todo, integrar todo.
-          copyright: Derechos de autor &copy; 2015 - 2023 por Power | <a href="https://beian.miit.gov.cn"> Número de registro ICP 20014898 en Guangdong </a>
-          nav_translations:
-            Home: Inicio
-            硬件 & 半导体: Hardware & Semiconductor
-            硬件设计: Diseño de hardware
-            基础知识: Fundamentos
-            嵌入式硬件: Hardware incrustado
-            电机驱动: Control de motores
-            通信协议: Protocolos de comunicación
-            电源设计: Diseño de energía
-            信号与电源完整性: Integridad de señal y energía
-            射频设计: Diseño de RF
-            软件与仪器: Software y herramientas
-            半导体测试: Pruebas de semiconductores
-            测试协议: Protocolos de prueba
-            ATE 基础知识: Fundamentos de ATE
-            ATE Test Fundamental: Fundamentos de prueba ATE
-            ATE Mixed Signal Test: Prueba de señal mixta ATE
-            ATE Coding Syntax: Sintaxis de codificación ATE
-            VBT Syntax: Sintaxis VBT
-            嵌入式 & 软件开发: Desarrollo de software y hardware incrustado
-            嵌入式开发: Desarrollo incrustado
-            STM32: STM32
-            Arduino & 杂项: Arduino y miscelánea
-            软件开发: Desarrollo de software
-            DOCKER: Docker
-            LINUX: Linux
-            杂七杂八: Miscelánea
-            机器学习: Aprendizaje Automático
-            其他: Otros
-            生活 & 折腾: Vida y exploración
-            生活琐记: Anécdotas de vida
-            LIFEHACK: Trucos de vida
-            BLOG: Blog
-            折腾不止: Exploración continua
-            自托管 Self-Host: Autohospedaje
-            自托管应用收藏（Docker）: Colección de aplicaciones autohospedadas (Docker)
-            群晖 NAS: Synology NAS
-            技术流: Flujo técnico
-            一些小技巧: Algunos consejos y trucos
-        - locale: ar
-          name: اللغة العربية
-          build: true
-          site_description: اطلع على كل شيء واندمج بكل شيء.
-          copyright: حقوق النشر © 2015 - 2023 بواسطة باور | <a href="https://beian.miit.gov.cn\"> رقم ترخيص ICP 20014898 في قوانغدونغ </a>
-          nav_translations:
-            Home: الرئيسية
-            硬件 & 半导体: أجهزة الكمبيوتر والشرائح الإلكترونية
-            硬件设计: تصميم الأجهزة
-            基础知识: الأساسيات
-            嵌入式硬件: الأجهزة المضمنة
-            电机驱动: تشغيل المحرك
-            通信协议: بروتوكولات الاتصال
-            电源设计: تصميم الطاقة
-            信号与电源完整性: استقرار الإشارة والطاقة
-            射频设计: تصميم الراديو الجرفي
-            软件与仪器: البرمجيات والأدوات
-            半导体测试: اختبار الشرائح الإلكترونية
-            测试协议: بروتوكولات الاختبار
-            ATE 基础知识: أساسيات اختبار ATE
-            ATE Test Fundamental: مبادئ اختبار ATE
-            ATE Mixed Signal Test: اختبار الإشارة المختلطة ATE
-            ATE Coding Syntax: صيغة كتابة تعليمات ATE
-            VBT Syntax: صيغة VBT
-            嵌入式 & 软件开发: تطوير الأجهزة المضمنة والبرمجيات
-            嵌入式开发: تطوير الأجهزة المضمنة
-            STM32: STM32
-            Arduino & 杂项: أردوينو ونوادر أخرى
-            软件开发: تطوير البرمجيات
-            DOCKER: دوكر
-            LINUX: لينوكس
-            杂七杂八: متفرقات
-            机器学习: تعلم الآلة
-            其他: أخرى
-            生活 & 折腾: الحياة والاستكشاف
-            生活琐记: يوميات الحياة
-            LIFEHACK: الحيل التقنية
-            BLOG: المدونة
-            折腾不止: الاستكشاف المتواصل
-            自托管 Self-Host: الاستضافة الذاتية
-            自托管应用收藏（Docker）: مجموعة تطبيقات الاستضافة الذاتية (دوكر)
-            群晖 NAS: محرك التخزين الشبكي من شركة Synology
-            技术流: تدفق التقنية
-            一些小技巧: بعض النصائح والحيل
-  - search
-  - minify:
-      minify_html: true
-      minify_js: true
-      minify_css: true
-      htmlmin_opts:
-        remove_comments: true
-      cache_safe: true
-      js_files:
-        - javascripts/mathjax.js
-        #- javascripts/embed.js
-      css_files:
-        - stylesheets/extra.css
-  - rss:
-      abstract_chars_count: -1 # -1 for full content
-      #categories:
-      # - tags
-      #comments_path: "#__comments"
-      date_from_meta:
-        as_creation: "date"
-        #as_update: False
-        datetime_format: "%Y-%m-%d %H:%M"
-      enabled: True
-      feed_ttl: 1440
-      image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png
-      length: 1000
-      pretty_print: True
-      match_path: "(zh|blog)/.*"
-      url_parameters:
-        utm_source: "documentation"
-        utm_medium: "RSS"
-        utm_campaign: "feed-syndication"
+  # 扩展 MkDocs-Material 主题
+  custom_dir: overrides
+
+  # 设置站点徽标与标签页图标，支持 PNG 与 SVG
+  logo: img/logo.jpg
+  favicon: img/favicon.ico
+
+  language: zh # 中文，解决中文搜索问题
+  features:
+    - navigation.expand
+    - tabs
+
+    - navigation.top # "返回顶部" 按钮
+
+    - navigation.footer # 自定义页脚（显示上一页和下一页的链接）
+    - navigation.tabs # 将菜单呈现在位于上述视口标题下方的菜单层中。
+
+    # - navigation.indexes # 启用章节索引页后，文档可以直接附加到章节，这对于提供概览页面特别有用。
+
+    - toc.follow # 当启用目录的锚点跟随功能时，侧边栏会自动滚动，以便活动锚点始终可见。
+
+    - navigation.instant # 启用即时加载后，所有内部链接的点击都将被拦截并通过XHR进行调度，而无需完全重新加载页面。
+    - navigation.instant.progress # 依赖于 `navigation.instant` 的页面加载进度指示器
+
+    - search.highlight # 启用搜索高亮显示后，当用户点击搜索结果时，Material for MkDocs 将在点击链接后高亮显示所有匹配结果。
+
+  # 提供切换 日间 / 夜间 模式的选项
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        # name: Switch to light mode
+        name: 切换到明亮模式
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+
+      # 主色 / 强调色
+      primary: green
+      accent: green
+
+      toggle:
+        icon: material/brightness-7
+        # name: Switch to dark mode
+        name: 切换到暗黑模式
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+
+      # 主色
+      primary: black
+
+      toggle:
+        icon: material/brightness-4
+        # name: Switch to system preference
+        name: 切换到系统偏好
 
 extra:
-  alternate:
-    - name: 简体中文
-      link: /
-      lang: zh
-    - name: English
-      link: /en/
-      lang: en
-    - name: Español
-      link: /es/
-      lang: es
-    - name: اللغة العربية
-      link: /ar/
-      lang: ar
-  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      name: GitHub 个人主页
+      link: https://github.com/gytxtx/
+
+    - icon: material/email-outline
+      name: 使用 E-Mail 联系我
+      link: mailto:gytxtx@outlook.com
+
+  # Google Analytics
   analytics:
     provider: google
-    property: G-QBB3SQMGLN # 如果克隆我的站点，请把这串GA代码改成你自己的
-  social:
-    - name: 友链 & 导航站
-      link: https://nav.wiki-power.com/
-      icon: fontawesome/regular/address-book
-    - name: 书摘
-      link: http://digest.wiki-power.com/
-      icon: fontawesome/regular/bookmark
-    - name: 资源仓库
-      link: https://github.com/linyuxuanlin/File-host
-      icon: fontawesome/regular/file-lines
+    property: G-29NRC21SS3
 
-copyright: Copyright &copy; since 2015 by Power
+markdown_extensions: 
+  - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
 
-markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem
-  - pymdownx.highlight:
-      anchor_linenums: true
+  # 文档内嵌图标支持
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  # - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
+  - nl2br # newline-to-break 
+  - toc:
+      permalink: '#' # heading anchor 
+      slugify: !!python/object/apply:pymdownx.slugs.slugify # 解决中文标题解析问题
+        kwds:
+          case: lower
+          max_length: 64
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  # - pymdownx.emoji:
+      # emoji_generator: !!python/name:pymdownx.emoji.to_png
   - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - attr_list
-  - md_in_html
-  - mdx_truly_sane_lists
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
 
-extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js
-  - javascripts/mathjax.js #https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/latest.min.js
-  - https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6 #https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
-  - https://viewer.altium.com/client/static/js/embed.js # javascripts/embed.js 
-  - javascripts/adsense.js # AdSense广告脚本
-  - javascripts/test-adsense.js # AdSense测试脚本（开发时使用）
-  - javascripts/accessibility.js
+  # Tab 选项卡支持
+  # - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
-extra_css:
-  - stylesheets/extra.css
-  - stylesheets/adsense.css 
+  # 网格卡片
+  # - attr_list
+  # - md_in_html
+
+plugins:
+  - search
+
+  # 灯箱，提供沉浸式的图片显示效果
+  - glightbox
+
+  - blog: # 博客插件
+      blog_toc: true # Blog 索引页支持使用文章标题生成目录
+  - tags: # 与博客集成的标签插件
+      # 从 9.6.0 版本开始，此设置已弃用，因为此版本对标签插件进行了彻底重写，使其比上一版本功能强大得多。现在，标签列表可以在任何页面上使用。
+      # tags_file: blog/tags.md # 标签索引文件
+
+  # 在页面底部显示 Git 编辑日期信息(需要进行一些配置，具体参见 https://github.com/timvink/mkdocs-git-revision-date-localized-plugin/ 文档。)
+  # 如果站点托管在 Cloudflare Pages，则参阅 https://pumpkinjui.pages.dev/blog/2025/03/22/pages_fetch_depth.html 。
+  - git-revision-date-localized:
+      enable_creation_date: true
+      # 默认值为 `false`。当 Git 不可用时，启用此选项将回退到执行 `mkdocs build` 命令时的时间戳作为修订日期。这意味着修订日期可能不准确，但如果您希望项目在没有 Git 访问权限的环境中也能成功构建，这种处理方式是可接受的。
+      fallback_to_build_date: true
+
+      type: iso_datetime
+      # 设置时区
+      timezone: Asia/Shanghai
+
+  - social: # 社交卡片 插件
+      cards_layout_options:
+        # 中文字体，解决默认字体无 CJK 字符的问题
+        font_family: Noto Sans SC
+
+  # - autolinks 
+
+  # MkDocs 排除插件，让 `docs` 文件夹中的指定文件不进入构建的站点目录中。
+  - exclude:
+      glob:
+        - "*.tmp"
+        - "*.pdf"
+        - "*.gz"
+      regex:
+        - '.*\.(tmp|bin|tar)$'
+
+copyright: Copyright &copy; 2025 KFACBT. All rights reserved.
